@@ -3,3 +3,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #088db5;
+    
+}
+nav{
+    display: flex;
+}
+nav ul{
+        display: flex;
+        justify-content: space-around;
+        background-color: #088db5;
+        padding: 10px;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+        color: white;
+
+}
+nav li{
+    cursor:pointer;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+
+}
+.download{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+.discord{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
