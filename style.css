@@ -7,7 +7,8 @@ header{
     display: flex;
     flex-direction: column;
     background-color: #088db5;
-    
+    text-align: center;
+
 }
 nav{
     display: flex;
@@ -28,18 +29,41 @@ nav li{
 }
 
 .login{
-    display: flex;
-    flex-direction: column;
-    margin: 25px;
+    width: fit-content;
+    align-self: center;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
 
 }
 .download{
-    display: flex;
-    flex-direction: column;
-    margin: 25px;
+    width: fit-content;
+    align-self: center;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
 }
 .discord{
+    width: fit-content;
+    align-self: center;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+   
+
+}
+.image-text{
     display: flex;
-    flex-direction: column;
-    margin: 25px;
+}
+.image-text-reverse{
+    display: flex;
 }
