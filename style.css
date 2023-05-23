@@ -2,51 +2,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  .main-h1 {
+}
+.main-h1 {
     font-size: 56px;
     font-weight: 800;
-  }
-  
-  .hero-text {
+}
+
+.hero-text {
     display: block;
     margin-bottom: 8px;
     font-family: inherit;
     font-weight: inherit;
     font-size: 100%;
     text-align: center;
-  }
-  
-  .hero-p {
+
+}
+
+.hero-p {
     margin-top: 40px;
     font-size: clamp(16px, 2vw, 20px);
     line-height: 1.625;
     text-align: center;
-  }
-  
-  .subtitles {
+}
+
+.subtitles {
     font-size: 48px;
     font-weight: 800;
-  }
-  
-  header {
+}
+
+header {
     display: flex;
     flex-direction: column;
     background-color: #404eed;
     text-align: center;
     position: relative;
     min-height: 700px;
-  }
-  
-  .main-section {
+}
+
+.main-section {
     display: block;
-    padding: 120px 300px;
+    padding: 60px 300px 0;
     color: white;
     font-family: inherit;
-  }
-  
-  nav {
+}
+
+
+nav {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -58,9 +59,18 @@
     font-size: 100%;
     vertical-align: baseline;
     gap: 0 20px;
-  }
-  
-  nav ul {
+    max-width: 1260px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 40px;
+}
+nav h1{
+    color: white;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+nav ul {
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -68,13 +78,13 @@
     list-style: none;
     width: 100%;
     color: white;
-  }
-  
-  nav li {
+}
+
+nav li {
     cursor: pointer;
-  }
-  
-  .login {
+}
+
+.login {
     margin: 0 10px 0 10px;
     width: fit-content;
     align-self: center;
@@ -87,9 +97,10 @@
     font-style: inherit;
     cursor: pointer;
     white-space: nowrap;
-  }
-  
-  .download {
+
+}
+
+.download {
     width: fit-content;
     align-self: center;
     padding: 16px 32px;
@@ -101,9 +112,9 @@
     cursor: pointer;
     margin-right: 24px;
     margin-top: 24px;
-  }
-  
-  .discord {
+}
+
+.discord {
     width: fit-content;
     align-self: center;
     padding: 16px 32px;
@@ -112,90 +123,115 @@
     border-radius: 28px;
     background-color: rgb(46, 45, 45);
     color: white;
-    margin-top: '24px';
+    margin-top: 24px;
     cursor: pointer;
-  }
-  
-  .image-text {
+}
+
+.image-text {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
     padding: 40px 100px;
-  }
-  
-  .image-text-reverse {
+    justify-content: space-around;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.image-text-reverse {
     display: flex;
     width: 100%;
     align-items: center;
     opacity: 1;
     gap: 0 20px;
     padding: 40px 100px;
-  }
-  
-  .image-container {
+    justify-content: space-around;
+    background-color: rgb(246, 246, 246);
+    margin: 0 auto;
+}
+.image-text-reverse-inner {
+    max-width: 1260px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.image-container {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.reliable-technology {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     padding: 40px 100px;
-  }
-  .reliable-technology {
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+   
+}
+
+.reliable-tech-inner {
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding: 40px 100px;
-  }
-  
-  .left-image {
+    align-items: center;
+    flex-direction: column;
+    max-width: 1260px;
+}
+
+.left-image {
     display: block;
     height: auto;
     width: auto;
     max-width: none;
     transform: none;
     z-index: 2;
-  }
-  
-  .right-image {
+}
+
+.right-image {
+
     display: block;
     z-index: 2;
-  }
-  
-  .mountain {
+
+
+}
+
+.mountain {
     position: absolute;
     top: auto;
     bottom: 0;
     display: block;
-    left: 50%;
-  }
-  
-  p {
+    width: -webkit-fill-available;
+}
+
+p {
     margin-top: 24px;
     font-size: clamp(16px, 2vw, 20px);
     line-height: 1.625;
-  }
-  .last-subtitle {
+}
+
+.last-subtitle {
     font-size: clamp(20px, 4vw, 40px);
-    font-family: 'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
-      sans-serif;
+    font-family: "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 95%;
     text-transform: uppercase;
     text-rendering: geometricPrecision;
     font-weight: 800;
-  }
-  .last-part {
+}
+
+.last-part {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-  .last-button {
+}
+
+.last-button {
     display: flex;
     width: fit-content;
     align-self: center;
@@ -209,79 +245,78 @@
     margin-right: 24px;
     margin-top: 24px;
     white-space: nowrap;
-    margin: 0 auto;
-  }
-  
-  .footer {
+}
+
+.footer {
     background-color: #23272a;
-  }
-  
-  .flex-container {
+}
+
+.flex-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-  
-  .footer-left {
+}
+
+.footer-left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 30px 0px 15px 0px;
     width: 12%;
-  }
-  
-  .footer-left-row1 {
+}
+
+.footer-left-row1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin: 0px 0px 15px 0px;
-  }
-  
-  #language-flag {
+}
+
+#language-flag {
     height: 25px;
-  }
-  
-  #select-language {
+}
+
+#select-language {
     height: 25px;
     margin-left: 10px;
-  }
-  
-  .footer-left-row2 {
+}
+
+.footer-left-row2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  
-  #social-media-icons {
+}
+
+#social-media-icons {
     width: 25px;
     margin-right: 1rem;
-  }
-  
-  .footer-right {
+}
+
+.footer-right {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
     margin: 30px 0px 15px 0px;
     width: 50%;
-  }
-  
-  .col-links {
+}
+
+.col-links {
     display: flex;
     flex-direction: column;
-  }
-  
-  #footer-header {
+}
+
+#footer-header {
     color: #5865f2;
     font-family: Arial;
     font-size: 16px;
     padding: 0px 0px 20px 0px;
-  }
-  
-  #footer-links {
+}
+
+#footer-links {
     text-decoration: none;
     font-family: Arial;
     font-size: 14px;
     color: white;
     margin: 0px 0px 15px 0px;
-  }
+}
