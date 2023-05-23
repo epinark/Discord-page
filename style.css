@@ -4,107 +4,212 @@
   box-sizing: border-box;
 }
 
+.main-h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.hero-text {
+  display: block;
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 100%;
+  text-align: center;
+}
+
+.hero-p {
+  margin-top: 40px;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.625;
+  text-align: center;
+}
+
+.subtitles {
+  font-size: 48px;
+  font-weight: 800;
+}
+
 header {
   display: flex;
   flex-direction: column;
-  background-color: #088db5;
+  background-color: #404eed;
   text-align: center;
+  position: relative;
+  min-height: 700px;
 }
+
+.main-section {
+  display: block;
+  padding: 120px 300px;
+  color: white;
+  font-family: inherit;
+}
+
 nav {
   display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 9999;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  gap: 0 20px;
 }
+
 nav ul {
   display: flex;
   justify-content: space-around;
-  background-color: #088db5;
   padding: 10px;
-  margin: 0;
+  margin: 10px;
   list-style: none;
   width: 100%;
   color: white;
 }
+
 nav li {
   cursor: pointer;
 }
 
 .login {
+  margin: 0 10px 0 10px;
   width: fit-content;
   align-self: center;
+  text-align: end;
   padding: 10px 30px;
   border: none;
-  border-radius: 20px;
+  border-radius: 40px;
   background-color: white;
   color: black;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  font-style: inherit;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .download {
   width: fit-content;
   align-self: center;
-  padding: 10px 30px;
+  padding: 16px 32px;
   border: none;
-  border-radius: 20px;
+  border-radius: 28px;
+  font-size: 20px;
   background-color: white;
   color: black;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-right: 24px;
+  margin-top: 24px;
 }
 
 .discord {
   width: fit-content;
   align-self: center;
-  padding: 10px 30px;
+  padding: 16px 32px;
+  font-size: 20px;
   border: none;
-  border-radius: 20px;
-  background-color: black;
+  border-radius: 28px;
+  background-color: rgb(46, 45, 45);
   color: white;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  margin-top: '24px';
+  cursor: pointer;
 }
 
-.footer {
-  background-color: #23272a;
+.image-text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  padding: 40px 100px;
 }
 
-.flex-container {
+.image-text-reverse {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  opacity: 1;
+  gap: 0 20px;
+  padding: 40px 100px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px 100px;
+}
+.reliable-technology {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px 100px;
+}
+
+.left-image {
+  display: block;
+  height: auto;
+  width: auto;
+  max-width: none;
+  transform: none;
+  z-index: 2;
+}
+
+.right-image {
+  display: block;
+  z-index: 2;
+}
+
+.mountain {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  display: block;
+  left: 50%;
+}
+
+p {
+  margin-top: 24px;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.625;
+}
+.last-subtitle {
+  font-size: clamp(20px, 4vw, 40px);
+  font-family: 'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  line-height: 95%;
+  text-transform: uppercase;
+  text-rendering: geometricPrecision;
+  font-weight: 800;
+}
+.last-part {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
-.footer-left {
+.last-button {
   display: flex;
-  flex-direction: column;
-  margin: 25px;
-}
-.download {
   width: fit-content;
   align-self: center;
-  padding: 10px 30px;
+  padding: 16px 32px;
   border: none;
-  border-radius: 20px;
-  background-color: white;
-  color: black;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
-}
-.discord {
-  width: fit-content;
-  align-self: center;
-  padding: 10px 30px;
-  border: none;
-  border-radius: 20px;
-  background-color: black;
+  border-radius: 28px;
+  font-size: 20px;
+  background-color: #404eed;
   color: white;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
-}
-.image-text {
-  display: flex;
-}
-.image-text-reverse {
-  display: flex;
-}
-.col-links {
-  display: flex;
-  flex-direction: column;
-  margin: 25px;
+  cursor: pointer;
+  margin-right: 24px;
+  margin-top: 24px;
+  white-space: nowrap;
+  margin: 0 auto;
 }
 
 .footer {
