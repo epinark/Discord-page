@@ -7,7 +7,8 @@ header{
     display: flex;
     flex-direction: column;
     background-color: #088db5;
-    
+    text-align: center;
+
 }
 nav{
     display: flex;
@@ -28,20 +29,116 @@ nav li{
 }
 
 .login{
-    display: flex;
-    flex-direction: column;
-    margin: 25px;
+    width: fit-content;
+    align-self: center;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
 
 }
 .download{
-    display: flex;
-    flex-direction: column;
-    margin: 25px;
+    width: fit-content;
+    align-self: center;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
 }
 .discord{
+    width: fit-content;
+    align-self: center;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+   
+
+}
+.image-text{
+    display: flex;
+}
+.image-text-reverse{
+    display: flex;
+}
+
+.footer {
+    background-color: #23272A;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-left {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0px 15px 0px;
+    width: 12%
+}
+
+.footer-left-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0px 0px 15px 0px;
+}
+
+#language-flag {
+    height: 25px;
+}
+
+#select-language {
+    height: 25px;
+    margin-left: 10px;
+}
+
+.footer-left-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#social-media-icons {
+    width: 25px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 30px 0px 15px 0px;
+    width: 50%;
+}
+
+.col-links {
     display: flex;
     flex-direction: column;
-    margin: 25px;
+}
+
+#footer-header {
+    color: #5865F2;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 0px 0px 20px 0px;
+}
+
+#footer-links {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 14px;
+    color: white;
+    margin: 0px 0px 15px 0px; 
 }
 
 .footer {
