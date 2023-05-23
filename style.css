@@ -43,3 +43,48 @@ nav li{
     flex-direction: column;
     margin: 25px;
 }
+
+.footer {
+    background-color: #23272A;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+
+.col-language {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+}
+
+#social-media-icons {
+    width: 25px;
+}
+
+.col-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0px 15px 0px;
+    width: 15%;
+}
+
+#footer-header {
+    color: #5865F2;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 0px 0px 20px 0px;
+}
+
+#footer-links {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 14px;
+    color: white;
+    margin: 0px 0px 15px 0px; 
+}
